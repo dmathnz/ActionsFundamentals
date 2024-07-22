@@ -1,0 +1,30 @@
+name: GitHub Actions Demo
+on: 
+  push:
+    branches: 
+      - main
+    paths-ignore: 
+      - .github/**
+  pull_request:
+      branches: 
+      - main
+  schedule:
+    - cron: "15 18 * * SUN"
+  workflow_dispatch:
+
+
+jobs:
+  build: 
+    name: Build
+    runs-on: ubuntu-latest
+    steps:    
+      - run: | 
+          echo "The event that triggered this workflow is $GITHUB_EVENT_NAME"
+          echo "The source branch is $GITHUB_HEAD_REF"
+        shell: bash
+      - uses: actions/checkout@v3.3.0    
+      - name: Print flies
+        run: tree
+        shell: bash
+    
+ 

@@ -18,5 +18,5 @@ jobs:
     with:
      who-to-greet: 'dmathnz'
   - name: Output
-    run: "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
+    run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
   

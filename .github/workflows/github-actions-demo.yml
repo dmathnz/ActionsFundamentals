@@ -59,16 +59,16 @@ jobs:
    steps:
    - run: | 
       echo "Step 1 deploying"
-      Sleep 10
+      sleep 10
    - run: | 
       echo "Step 2 deploying"
-      Sleep 10
+      sleep 10
    - run: | 
       echo "Step 3 deploying"
-      Sleep 10
+      sleep 10
    - run: | 
       echo "Step 4 deploying"
-      Sleep 10
+      sleep 10
    - run: | 
       echo "Step 5 deploying"
-      Sleep 10
+      sleep 10
